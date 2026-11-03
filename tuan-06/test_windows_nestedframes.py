@@ -92,7 +92,7 @@ def test_cookies():
     driver.get("https://the-internet.herokuapp.com/windows")
 
     # Thêm một cookie mới vào trình duyệt
-    driver.add_cookie({'name': 'my_test_cookie', 'value': '12345'})
+    driver.add_cookie({'name': 'Heisenberg', 'value': '99.1%'})
     
     # Lấy toàn bộ cookies hiện có
     cookies = driver.get_cookies()
