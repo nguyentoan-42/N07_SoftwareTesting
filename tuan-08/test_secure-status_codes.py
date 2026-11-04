@@ -17,7 +17,7 @@ def test_login_and_cookies():
     driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
 
     # 3.6 History and location - current_url
-    # Kiểm tra xem đã nhảy sang trang /secure chưa
+    # Kiểm tra xem đã nhảy sang trang "/secure" chưa
     assert "secure" in driver.current_url
 
     # 3.7 Cookies - get_cookies()
