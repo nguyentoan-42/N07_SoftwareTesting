@@ -17,7 +17,7 @@ def test_login_and_cookies():
     driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
 
     # 3.6 History and location - current_url
-    # Kiểm tra xem đã nhảy sang trang /secure chưa
+    # Kiểm tra xem đã nhảy sang trang "/secure" chưa
     assert "secure" in driver.current_url
 
     # 3.7 Cookies - get_cookies()
@@ -77,7 +77,7 @@ def test_history_and_link_text():
 
     # Bấm Lùi Lại 2 lần để về tận trang chủ the-internet ban đầu
     driver.back() # Lùi về Status Codes
-    driver.back() # Lùi về Windows
+    driver.back() # Lùi về trang chủ the-internet
     assert driver.current_url == "https://the-internet.herokuapp.com/"
 
     driver.quit()
