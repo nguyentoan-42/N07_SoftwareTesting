@@ -77,7 +77,7 @@ def test_history_and_link_text():
 
     # Bấm Lùi Lại 2 lần để về tận trang chủ the-internet ban đầu
     driver.back() # Lùi về Status Codes
-    driver.back() # Lùi về Windows
+    driver.back() # Lùi về trang chủ the-internet
     assert driver.current_url == "https://the-internet.herokuapp.com/"
 
     driver.quit()
