@@ -16,7 +16,7 @@ def test_notification_message():
     # Chờ cho đến khi khung thông báo (id="flash") thực sự hiển thị trên màn hình
     flash_message = wait.until(
         EC.visibility_of_element_located((By.ID, "flash")))
-    assert flash_message is not None
+    assert flash_message is not None # Thật ra là không nhất thiết phải có dòng này
 
     # Click vào chữ "Click here" để trang web tải ra thông báo mới
     driver.find_element(By.LINK_TEXT, "Click here").click()
